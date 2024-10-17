@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 
 class sharedpreference(context: Context) {
-
+ // this is the  shared preference file
     private val sharedPreferences: SharedPreferences =
         context.getSharedPreferences("Userid", Context.MODE_PRIVATE)
 
