@@ -1,0 +1,5 @@
+<!-- res/drawable/half_circle.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/blue" /> <!-- Change color as needed -->
+    <corners android:bottomLeftRadius="60dp" android:bottomRightRadius="60dp" />
+</shape>

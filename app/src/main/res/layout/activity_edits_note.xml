@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/editNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/productsansmedium"
+        android:text="@string/tb_edit_note_heading"
+        android:textColor="@color/custom"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/editNoteHeading"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/cv_borders"
+        android:fontFamily="@font/productsansmedium"
+        android:hint="@string/et_edit_note_title_hint"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editNoteDesc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editNoteTitle"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/cv_borders"
+        android:fontFamily="@font/productsansmedium"
+        android:gravity="top"
+        android:hint="@string/et_edit_note_desc_hint"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/editNoteFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/custom"
+        android:clickable="true"
+        android:contentDescription="@string/fab_edit_note_fab_desc"
+        android:src="@drawable/doneicon"
+        android:tintMode="@color/white" />
+</RelativeLayout>

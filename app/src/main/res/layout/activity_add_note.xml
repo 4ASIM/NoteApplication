@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/addNoteHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/productsansmedium"
+            android:text="@string/tb_add_note_heading"
+            android:textColor="@color/custom"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/addNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/addNoteHeading"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/cv_borders"
+            android:fontFamily="@font/productsansmedium"
+            android:hint="@string/et_add_note_title_hint"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/addNoteDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addNoteTitle"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/cv_borders"
+            android:fontFamily="@font/productsansmedium"
+            android:gravity="top"
+            android:hint="@string/et_add_note_desc_hint"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minHeight="200dp"
+            android:padding="12dp"
+            android:scrollbars="vertical"
+            android:textSize="18sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addNoteDesc"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/custom"
+            app:cardCornerRadius="10dp">
+
+            <Button
+                android:id="@+id/btn_add_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:lineSpacingExtra="19.41sp"
+                android:padding="0dp"
+                android:text="@string/bt_add_notes"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Notes App</string>
+
+    //Main screen string
+    <string name="tb_appname">Notes App</string>
+    <string name="tb_main_wcback">Welcome Back</string>
+    <string name="tb_main_signnote">Sign in to continue</string>
+    <string name="et_main_emailhint">Email</string>
+    <string name="et_main_passhint">Password</string>
+    <string name="bt_main_SignIn">Sign In</string>
+    <string name="tb_main_noaccount">Donot have any account?</string>
+
+    //signup screen string
+    <string name="tb_welcome">Welcome,</string>
+    <string name="tb_signupline">Sign up to capture your thoughts and ideas</string>
+    <string name="tb_email">Email</string>
+    <string name="tb_password">Password</string>
+    <string name="tb_confirm_password">Confirm Password</string>
+    <string name="bt_signup">Sign Up</string>
+    <string name="tb_login_redirect">Already an user? Login</string>
+
+    //edit note
+    <string name="tb_edit_note_heading">Edit Note</string>
+    <string name="et_edit_note_title_hint">Enter the title</string>
+    <string name="et_edit_note_desc_hint">Enter the description</string>
+    <string name="fab_edit_note_fab_desc">editFab</string>
+
+    //dashboard
+    <string name="tb_welcome_text">Welcome to Notes App</string>
+    <string name="fab_add_note_desc">Add Note</string>
+
+    //add notes
+    <string name="tb_add_note_heading">Add Note</string>
+    <string name="et_add_note_title_hint">Enter the title</string>
+    <string name="et_add_note_desc_hint">Enter the description</string>
+    <string name="bt_add_notes">Add Notes</string>
+
+    //note layout
+    <string name="tb_note_title">Note Title</string>
+    <string name="tb_note_desc">Description</string>
+    <string name="cd_delete_icon">Delete Note</string>
+    <string name="cd_edit_icon">Edit Note</string>
+
+</resources>
