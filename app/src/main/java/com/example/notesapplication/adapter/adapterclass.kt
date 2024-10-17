@@ -35,6 +35,7 @@ class adapterclass(
         holder.noteTitle.text = note.datatitle
         holder.noteDetail.text = note.dataDescription
 
+        // this is basically for giving different color to the card view mean it will set the random color to the list and user can be able to see the random color in the card view
 
         val colors = listOf(
             R.color.colorRed,
@@ -48,6 +49,7 @@ class adapterclass(
         val randomColor = colors.random()
         holder.itemView.setBackgroundColor(holder.itemView.context.getColor(randomColor))
 
+        //This will show as alert dialog box for the deletion confirmation that the note is been deleted and from this of any not will be deleted from the list then it will notify and before that it will tell user that he or she want to delete that note of not and the delete that note
 
         holder.deleteIcon.setOnClickListener {
             // Show an alert dialog for deletion confirmation
@@ -73,6 +75,6 @@ class adapterclass(
             holder.itemView.context.startActivity(intent)
         }
     }
-
+// this is basically for counting the number of item in the list from this we can be able to count the now of item in the list
     override fun getItemCount() = noteList.size
 }
